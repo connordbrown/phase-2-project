@@ -7,7 +7,7 @@ function App() {
   return (
     <BrowserRouter>
       <NavBar />
-      <div>Hi!</div>
+      <div>Hi! This is my app!</div>
     </BrowserRouter>
   );
 }
