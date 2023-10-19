@@ -1,3 +1,11 @@
 .App {
   text-align: center;
 }
+
+.card-group {
+  display: flex;
+  margin: 20px;
+  flex-wrap: wrap;
+  gap: 40px;
+  font-size: x-large;
+}

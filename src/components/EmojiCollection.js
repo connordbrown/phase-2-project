@@ -1,5 +1,6 @@
 import React from "react";
 import EmojiCard from "./EmojiCard";
+import "./App.css";
 
 function EmojiCollection({ emojis }) {
   const emojisToDisplay = emojis.map(emoji => {
