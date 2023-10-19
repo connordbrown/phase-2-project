@@ -28,7 +28,7 @@ function Home() {
     })
     
     return (
-        <div>
+        <div className='Home'>
           <h1>Welcome to the Home page!</h1>
           <span className="search-filter-container">
             <Search emojiSearch={emojiSearch} setEmojiSearch={setEmojiSearch} />

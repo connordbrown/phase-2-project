@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.Home {
+  text-align: center;
+}
+
 /* displays EmojiCards in a flexible grid*/
 .card-group {
   display: flex;
