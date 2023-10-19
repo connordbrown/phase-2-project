@@ -1,11 +1,13 @@
 import React, { useState } from "react";
+import "./App.css";
 
 function EmojiCard({ id, htmlCode }) {
 
+  // safely converts htmlCode to text
   const text = document.createElement("div");
   text.innerHTML = htmlCode;
+  // innerText does not run scripts
   const convertedText = text.innerText;
-  
 
   return (
       <div className="emoji-card">
