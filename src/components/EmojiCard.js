@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import "./App.css";
 
-function EmojiCard({ id, htmlCode }) {
+function EmojiCard({ id, htmlCode, name }) {
 
   // safely converts htmlCode to text
   const text = document.createElement("div");
@@ -10,17 +11,20 @@ function EmojiCard({ id, htmlCode }) {
   const convertedText = text.innerText;
 
   return (
+    <Link to={`/emoji/${name}`}>
       <div className="emoji-card">
-        <div className="image"></div>
+        
         <div className="content">
           <div className="header">
             {convertedText}
           </div>
         </div>
+       
         <div className="extra content">
           <span></span>
         </div>
       </div>
+      </Link>
   );
 }
 

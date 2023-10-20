@@ -4,10 +4,11 @@ import "./App.css";
 
 function EmojiCollection({ emojis }) {
   const emojisToDisplay = emojis.map(emoji => {
-    const { id, htmlCode } = emoji;
+    const { id, htmlCode, name } = emoji;
     return <EmojiCard key={id}
                         id={id}
                         htmlCode={htmlCode}
+                        name={name}
     />
   })
 
