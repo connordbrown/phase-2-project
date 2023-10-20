@@ -5,7 +5,7 @@ function EmojiInfo({ emojiList, isLoaded }) {
     const params = useParams();
 
     if(!isLoaded) {
-        return <h3>Loading...</h3>
+        return <h3 className="loading-bar">Loading...</h3>
     }
 
     const emojiData = emojiList.find(emoji => {

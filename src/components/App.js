@@ -22,9 +22,9 @@ function App() {
   }, [])
 
   if(!isLoaded) {
-    return <h2>Loading...</h2>
+    return <h3 className="loading-bar">Loading...</h3>
   }
-  
+
   return (
     <BrowserRouter>
       <NavBar />

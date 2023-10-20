@@ -63,3 +63,6 @@
   grid-area: details;
 }
 
+.loading-bar {
+  margin-left: 50px;
+}
