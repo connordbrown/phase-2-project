@@ -11,7 +11,7 @@ function EmojiCard({ id, htmlCode, name }) {
   const convertedText = text.innerText;
 
   return (
-    <Link to={`/emoji/${name}`}>
+    <Link to={`/emoji/${name}`} className="no-underline">
       <div className="emoji-card">
         <div className="content">
           <div className="header">

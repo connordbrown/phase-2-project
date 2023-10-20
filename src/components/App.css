@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-/* displays EmojiCards in a flexible grid*/
+/* displays EmojiCards in a flexible grid */
 .card-group {
   display: flex;
   margin: 20px;
@@ -26,9 +26,15 @@
 .search-filter-container {
   display: flex;
   align-items: center;
+  margin-left: 20px;
 }
 
 /* adds margin to the right of the Search component */
 .search-filter-container > * {
   margin-right: 10px; 
+}
+
+/* removes underline from Link in EmojiCard */
+.no-underline {
+  text-decoration: none;
 }

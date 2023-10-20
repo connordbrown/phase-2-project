@@ -1,19 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import EmojiCollection from '../components/EmojiCollection';
 import Search from '../components/Search';
 import EmojiFilter from '../components/EmojiFilter';
 import '../components/App.css';
 
-function Home() {
-    const [emojiList, setEmojiList] = useState([]);
+function Home({ emojiList }) {
     const [emojiSearch, setEmojiSearch] = useState("");
     const [categoryFilter, setCategoryFilter] = useState("smileys and people");
-
-    useEffect(() => {
-      fetch("http://localhost:3000/emojis")
-      .then(response => response.json())
-      .then(data => setEmojiList(data))
-    }, [])
 
     function handleCategoryChange(event) {
         setCategoryFilter(event.target.value)
