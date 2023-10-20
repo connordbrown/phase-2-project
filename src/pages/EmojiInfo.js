@@ -24,10 +24,10 @@ function EmojiInfo({ emojiList, isLoaded }) {
         <div className="emoji-info-container">
             <div id="emoji-big">{emojiText}</div>
             <div className="emoji-details">
-                <span>Emoji Name: {name}</span>
-                <span>Emoji Category: {category}</span>
-                <span>Emoji Group: {group}</span>
-                <span>Emoji htmlCode: {htmlCode}</span>
+                <span><em>Name:</em> {name}</span>
+                <span><em>Category:</em> {category}</span>
+                <span><em>Group:</em> {group}</span>
+                <span><em>HTML Code:</em> {htmlCode}</span>
             </div>
         </div>
     )
