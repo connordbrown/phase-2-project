@@ -63,15 +63,18 @@
   grid-area: details;
 }
 
+/* add spacing in App and EmojiInfo */
 .loading-bar {
   margin-left: 50px;
 }
 
+/* EmojiForm inputs */
 .input-text {
   font-size: 18px;
   margin: 3px;
 }
 
+/* EmojiForm specs */
 .container {
   border: 2px solid black;
   width: 200px;
@@ -79,6 +82,7 @@
   padding: 20px
 }
 
+/* submit button in EmojiForm */
 .submit {
   position: relative;
   border-radius: 5px;

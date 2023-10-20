@@ -5,7 +5,7 @@ function NewEmojiForm() {
     return (
         <div className="container">
           <form className="add-emoji-form">
-            <h3>Add a new emoji!</h3>
+            <h3><em>Add a new emoji!</em></h3>
             <input
               type="text"
               name="name"
