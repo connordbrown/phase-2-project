@@ -10,13 +10,21 @@ import ErrorPage from '../pages/ErrorPage.js';
 
 function App() {
   const [emojiList, setEmojiList] = useState([]);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     fetch("http://localhost:3000/emojis")
     .then(response => response.json())
-    .then(data => setEmojiList(data))
+    .then(data => {
+                   setEmojiList(data)
+                   setIsLoaded(true);
+          })
   }, [])
 
+  if(!isLoaded) {
+    return <h2>Loading...</h2>
+  }
+  
   return (
     <BrowserRouter>
       <NavBar />
@@ -24,7 +32,7 @@ function App() {
         <Route path="/" element={<Home emojiList={emojiList} />} />
         <Route path="/about" element={<About />} />
         <Route path="/new-emoji-form" element={<NewEmojiForm />} />
-        <Route path="/emoji/:name" element={<EmojiInfo emojiList={emojiList} />} />
+        <Route path="/emoji/:name" element={<EmojiInfo emojiList={emojiList} isLoaded={isLoaded} />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>

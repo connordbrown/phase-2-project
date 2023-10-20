@@ -1,13 +1,12 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
-function EmojiInfo({ emojiList }) {
+function EmojiInfo({ emojiList, isLoaded }) {
     const params = useParams();
-/// fix loading problem!!!
-////
-///
-//
-/////
+
+    if(!isLoaded) {
+        return <h3>Loading...</h3>
+    }
 
     const emojiData = emojiList.find(emoji => {
         return emoji.name === params.name;
