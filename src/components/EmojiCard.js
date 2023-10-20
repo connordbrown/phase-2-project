@@ -8,14 +8,14 @@ function EmojiCard({ id, htmlCode, name }) {
   const text = document.createElement("div");
   text.innerHTML = htmlCode;
   // innerText does not run scripts
-  const convertedText = text.innerText;
+  const emojiText = text.innerText;
 
   return (
     <Link to={`/emoji/${name}`} className="no-underline">
       <div className="emoji-card">
         <div className="content">
           <div className="header">
-            {convertedText}
+            {emojiText}
           </div>
         </div>
         <div className="extra content">
