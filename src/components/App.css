@@ -66,3 +66,25 @@
 .loading-bar {
   margin-left: 50px;
 }
+
+.input-text {
+  font-size: 18px;
+  margin: 3px;
+}
+
+.container {
+  border: 2px solid black;
+  width: 200px;
+  margin: 20px;
+  padding: 20px
+}
+
+.submit {
+  position: relative;
+  border-radius: 5px;
+  height: 2rem;
+  width: max-content;
+  font-size: 18px;
+  justify-self: center;
+  margin: 3px;
+}
