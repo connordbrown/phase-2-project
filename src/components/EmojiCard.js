@@ -13,18 +13,16 @@ function EmojiCard({ id, htmlCode, name }) {
   return (
     <Link to={`/emoji/${name}`}>
       <div className="emoji-card">
-        
         <div className="content">
           <div className="header">
             {convertedText}
           </div>
         </div>
-       
         <div className="extra content">
           <span></span>
         </div>
       </div>
-      </Link>
+    </Link>
   );
 }
 
