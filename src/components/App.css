@@ -38,3 +38,27 @@
 .no-underline {
   text-decoration: none;
 }
+
+.emoji-info-container {
+  display: grid;
+  grid-template-columns: 0fr 5fr;
+  grid-template-areas: 'emoji details';
+  grid-gap: 1rem;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 30px;
+}
+
+/* increase emoji size in EmojiInfo */
+#emoji-big {
+  font-size: 4rem;
+  grid-area: emoji;
+}
+
+/* stack EmojiInfo spans vertically */
+.emoji-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-area: details;
+}
+
