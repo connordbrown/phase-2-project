@@ -39,9 +39,10 @@
   text-decoration: none;
 }
 
+/* displays EmojiInfo as two-column grid */
 .emoji-info-container {
-  display: grid;
-  grid-template-columns: 0fr 5fr;
+  display: inline-grid;
+  grid-template-columns: 0fr 4fr;
   grid-template-areas: 'emoji details';
   grid-gap: 1rem;
   border: 2px solid black;
