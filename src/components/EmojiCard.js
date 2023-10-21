@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 // styling for App and child components
 import "./App.css";
 
-// creates card with specific emoji displayed based on htmlCode
-// links card to endpoint determined by name
+// create card with specific emoji displayed based on htmlCode
+// link card to endpoint determined by name
 // params: htmlCode (string), name (string)
 function EmojiCard({ htmlCode, name }) {
 
-  // safely converts htmlCode to text
+  // safely convert htmlCode to text
   const text = document.createElement("div");
   text.innerHTML = htmlCode;
   // innerText does not run scripts

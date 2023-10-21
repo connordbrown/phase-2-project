@@ -4,7 +4,7 @@ import EmojiCard from "./EmojiCard";
 // styling for App and child components
 import "./App.css";
 
-// creates collection of EmojiCard components and displays them as a group
+// create collection of EmojiCard components and displays them as a group
 // param: emojis (Object array)
 function EmojiCollection({ emojis }) {
   const emojisToDisplay = emojis.map(emoji => {
