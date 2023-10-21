@@ -9,7 +9,7 @@ function EmojiForm({ onNewEmojiSubmit }) {
 
     return (
         <div className="container">
-          <form className="add-emoji-form">
+          <form className="add-emoji-form" onSubmit={(event) => onNewEmojiSubmit(event, name, category, group, htmlCode)}>
             <h3><em>Add a new emoji!</em></h3>
             <input
               type="text"
@@ -52,7 +52,6 @@ function EmojiForm({ onNewEmojiSubmit }) {
               name="submit"
               value="Create New Emoji"
               className="submit"
-              onSubmit={onNewEmojiSubmit}
             />
           </form>
         </div>
