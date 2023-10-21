@@ -1,6 +1,6 @@
 import React from 'react';
 
-// create description of application and any other useful information
+// display description of application and any other useful information
 function About() {
     return (
         <div className="About">
