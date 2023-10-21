@@ -3,8 +3,8 @@ import React from 'react';
 import EmojiForm from '../components/EmojiForm'
 
 // display form for creating new emojis
-function NewEmojiForm({ onNewEmojiSubmit }) {
-  return <EmojiForm onNewEmojiSubmit={onNewEmojiSubmit} />  
+function NewEmojiForm({ onAddNewEmoji }) {
+  return <EmojiForm onAddNewEmoji={onAddNewEmoji} />  
 }
 
 export default NewEmojiForm;

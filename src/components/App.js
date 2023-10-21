@@ -30,30 +30,10 @@ function App() {
   }, [])
 
   // post a new emoji to the backend and render it on the page
-  // params: event (object), emojiName (string), emojiCategory (string), emojiGroup(string), emojiHtmlCode(string)
-  function handleAddNewEmoji(event, emojiName, emojiCategory, emojiGroup, emojiHtmlCode) {
-    event.preventDefault();
-    fetch("http://localhost:3000/emojis", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-      },
-      body: JSON.stringify({
-        "name": emojiName,
-        "category": emojiCategory,
-        "group": emojiGroup,
-        "htmlCode": emojiHtmlCode,
-        "unicode": ""          
-      })
-    })
-    .then(response => response.json())
-    .then(newEmoji => {
-      // add newEmoji to emojiList and update state to show change on page
-      const updatedEmojis = [...emojiList, newEmoji];
-      setEmojiList(updatedEmojis);
-    })
-    .catch(error => alert(error.message))
+  // param: newEmoji (Object)
+  function addNewEmoji(newEmoji) {
+    const updatedEmojis = [...emojiList, newEmoji];
+    setEmojiList(updatedEmojis);
   }
 
   // if page elements are not yet loaded, display a loading message
@@ -68,7 +48,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home emojiList={emojiList} />} />
         <Route path="/about" element={<About />} />
-        <Route path="/new-emoji-form" element={<NewEmojiForm onNewEmojiSubmit={handleAddNewEmoji} />} />
+        <Route path="/new-emoji-form" element={<NewEmojiForm onAddNewEmoji={addNewEmoji} />} />
         <Route path="/emoji/:name" element={<EmojiInfo emojiList={emojiList} isLoaded={isLoaded} />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
