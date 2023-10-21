@@ -22,10 +22,6 @@ function App() {
     .catch(error => alert(error.message))
   }, [])
 
-  if(!isLoaded) {
-    return <h3 className="loading-bar">Loading...</h3>
-  }
-
   function handleAddNewEmoji(event, emojiName, emojiCategory, emojiGroup, emojiHtmlCode) {
     event.preventDefault();
     fetch("http://localhost:3000/emojis", {
@@ -50,6 +46,10 @@ function App() {
     .catch(error => alert(error.message))
   }
 
+  if(!isLoaded) {
+    return <h3 className="loading-bar">Loading...</h3>
+  }
+  
   return (
     <BrowserRouter>
       <NavBar />

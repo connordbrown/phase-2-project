@@ -4,10 +4,6 @@ import { useParams } from 'react-router-dom';
 function EmojiInfo({ emojiList, isLoaded }) {
     const params = useParams();
 
-    if(!isLoaded) {
-        return <h3 className="loading-bar">Loading...</h3>
-    }
-
     const emojiData = emojiList.find(emoji => {
         return emoji.name === params.name;
     })
@@ -20,6 +16,10 @@ function EmojiInfo({ emojiList, isLoaded }) {
     // innerText does not run scripts
     const emojiText = text.innerText;
 
+    if(!isLoaded) {
+        return <h3 className="loading-bar">Loading...</h3>
+    }
+    
     return (
         <div className="emoji-info-container">
             <div id="emoji-big">{emojiText}</div>
