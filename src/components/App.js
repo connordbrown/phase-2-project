@@ -18,14 +18,19 @@ function App() {
   // create state for asynchronous page rendering
   const [isLoaded, setIsLoaded] = useState(false);
 
+  // update state with emojiData acquired from server
+  // let App know that data has been loaded
+  // param: emojiData (Obj array)
+  function configureState(emojiData) {
+    setEmojiList(emojiData);
+    setIsLoaded(true);
+  }
+
   // fetch emoji data from server, then set states
   useEffect(() => {
     fetch("http://localhost:3000/emojis")
     .then(response => response.json())
-    .then(data => {
-                   setEmojiList(data)
-                   setIsLoaded(true);
-          })
+    .then(data => configureState(data))
     .catch(error => alert(error.message))
   }, [])
 
