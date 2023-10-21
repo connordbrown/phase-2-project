@@ -1,5 +1,8 @@
 import React from "react";
 
+// creates dropdown menu with emojiList categories
+// passes onChange function up to App through onCategoryChange prop
+// param: onCategoryChange (function)
 function EmojiFilter({ onCategoryChange }) {
     return (
       <select name="type" id="type" aria-label="type" onChange={onCategoryChange} >

@@ -1,5 +1,7 @@
 import React from "react";
+// for putting in EmojiCollection
 import EmojiCard from "./EmojiCard";
+// styling for App and child components
 import "./App.css";
 
 // creates collection of EmojiCard components and displays them as a group
