@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+// for page routing
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // styling for App and child components
 import './App.css';

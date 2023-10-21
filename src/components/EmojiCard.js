@@ -1,7 +1,12 @@
 import React from "react";
+// for creating link to another page
 import { Link } from "react-router-dom";
+// styling for App and child components
 import "./App.css";
 
+// creates card with specific emoji displayed based on htmlCode
+// links card to endpoint determined by name
+// params: htmlCode (string), name (string)
 function EmojiCard({ htmlCode, name }) {
 
   // safely converts htmlCode to text
@@ -10,6 +15,7 @@ function EmojiCard({ htmlCode, name }) {
   // innerText does not run scripts
   const emojiText = text.innerText;
 
+  // `/emoji/name` is unique endpoint for each card
   return (
     <Link to={`/emoji/${name}`} className="no-underline">
       <div className="emoji-card">
