@@ -40,7 +40,7 @@
 
 /* adds margin to the right of the Search component */
 .search-filter-container > * {
-  margin-right: 10px; 
+  margin-right: 30px; 
 }
 
 /* removes underline from Link in EmojiCard */
