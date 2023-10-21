@@ -6,6 +6,13 @@
   text-align: center;
 }
 
+.About {
+  border: 2px solid black;
+  width: 600px;
+  margin: 20px;
+  padding: 20px;
+  text-align: justify;
+}
 /* displays EmojiCards in a flexible grid */
 .card-group {
   display: flex;

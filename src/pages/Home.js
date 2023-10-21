@@ -22,7 +22,7 @@ function Home({ emojiList }) {
     
     return (
         <div className='Home'>
-          <h1>Welcome to the Home page!</h1>
+          <h1>Welcome to EmojiFinder!</h1>
           <span className="search-filter-container">
             <Search emojiSearch={emojiSearch} setEmojiSearch={setEmojiSearch} />
             <EmojiFilter onCategoryChange={handleCategoryChange} />
