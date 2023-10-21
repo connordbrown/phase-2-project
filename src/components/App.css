@@ -13,13 +13,14 @@
   padding: 20px;
   text-align: justify;
 }
+
 /* displays EmojiCards in a flexible grid */
 .card-group {
   display: flex;
   margin: 20px;
   flex-wrap: wrap;
   gap: 40px;
-  font-size: x-large;
+  font-size: xx-large;
 }
 
 /* adds border to EmojiCard */

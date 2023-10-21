@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./App.css";
 
-function EmojiCard({ id, htmlCode, name }) {
+function EmojiCard({ htmlCode, name }) {
 
   // safely converts htmlCode to text
   const text = document.createElement("div");
