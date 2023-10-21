@@ -1,3 +1,4 @@
+/* displays Navbar navlinks as row of boxes */
 .navbar > a{
     display: inline-block;
     box-sizing: border-box;
@@ -10,7 +11,8 @@
     font-size: min(10vw, 15px) ;
     color: black;
 }
-  
+
+/* changes color of Navbar navlinks when they are clicked */
 a.active {
     background: black;
     color: white;

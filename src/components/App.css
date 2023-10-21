@@ -6,6 +6,7 @@
   text-align: center;
 }
 
+/* displays About page in a box with justified text*/
 .About {
   border: 2px solid black;
   width: 600px;
