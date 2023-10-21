@@ -4,7 +4,7 @@ EmojiFinder is a front-end application for looking up and adding your favorite e
 
 ## Operation
 
-Use the API simulator [json-server](https://www.npmjs.com/package/json-server) to run the application's back-end.
+Use the API simulator [json-server](https://www.npmjs.com/package/json-server) to run the application's back-end:
 
 ```bash
 json-server --watch db.json
@@ -17,7 +17,6 @@ npm start
 ## Usage
 
 Home
-
     When the page loads, the user will see the Home page. It features a nav bar, followed by an emoji search and emoji category filter, followed by a list of emoji cards. Emoji cards can be filtered by category using the Filter By Category dropdown above the list. Users can search for specific emojis using the Search bar. The user can scroll through the emoji cards and select one by clicking on it. The page will display the clicked emoji, as well as its name, category, group, and HTML code.
 
 About
