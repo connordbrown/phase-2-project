@@ -5,7 +5,7 @@ import '../components/App.css';
 // create a form for adding new emojis to emojiList
 function EmojiForm({ onNewEmojiSubmit }) {
     // create state for controlled form - form values are determined/updated using state
-    // when fields change, state is updated
+    // each piece of state is for one form field - when fields change, state is updated 
     const [name, setName] = useState("");
     const [category, setCategory] = useState("");
     const [group, setGroup] = useState("");

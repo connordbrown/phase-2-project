@@ -1,5 +1,8 @@
 import React from "react";
 
+// create search bar for finding emojis by name
+// search bar is controlled - params are updated when the field changes
+// params: emojiSearch (string), setEmojiSearch (function)
 function Search({ emojiSearch, setEmojiSearch }) {
   return (
     <div className="ui search">
