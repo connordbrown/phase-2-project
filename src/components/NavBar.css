@@ -2,7 +2,8 @@
 .navbar > a{
     display: inline-block;
     box-sizing: border-box;
-    width: 80px;
+    border: 1px solid black;
+    width: 82px;
     padding: 5px;
     margin: 0 6px 6px;
     background: lightblue;
@@ -15,7 +16,7 @@
 /* NavBar background */
 .nav-container {
     background-color: lightsalmon;
-    width: 278px;
+    width: 285px;
 }
 
 /* changes color of Navbar navlinks when they are clicked */
