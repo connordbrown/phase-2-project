@@ -23,7 +23,7 @@ npm start
     - When the user clicks on the About button on the nav bar, the page will display a description of the application.
 
 3. Add Emoji: 
-    - When the user clicks on the Add Emoji button in the nav bar, the page will display a form for adding new emojis. Input a name, a category featured in the dropdown in Home, a group name, and a valid HTML code, then click Create New Emoji to post a new emoji to the backend and render it on the Home page.
+    - When the user clicks on the Add Emoji button in the nav bar, the page will display a form for adding new emojis. Input a name, a category featured in the dropdown in Home, a group name, and a valid HTML code, then click Create New Emoji to post a new emoji to the backend and render it on the Home page. Click the Home button in the nav bar to return to Home.
 
 ## Contributing
 
