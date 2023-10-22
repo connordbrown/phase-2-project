@@ -13,7 +13,7 @@ function EmojiInfo({ emojiList, isLoaded }) {
         return emoji.name === params.name;
     })
 
-    // check whether emojiData is null to prevent runtime error
+    // check whether emojiData is null to handle runtime error
     if (!emojiData) {
         return <h3 className="loading-bar">Oops! Emoji data not found</h3>
     }

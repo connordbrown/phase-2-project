@@ -82,6 +82,11 @@
   margin-left: 50px;
 }
 
+/* add spacing in ErrorPage */
+.error-bar {
+  margin-left: 50px;
+}
+
 /* EmojiForm inputs */
 .input-text {
   font-size: 18px;
