@@ -8,8 +8,6 @@ function EmojiInfo({ emojiList, isLoaded }) {
     // get specific endpoint
     const params = useParams();
 
-
-
     // find data in emojiList that matches endpoint
     const emojiData = emojiList.find(emoji => {
         return emoji.name === params.name;
