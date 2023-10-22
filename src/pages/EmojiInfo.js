@@ -8,10 +8,17 @@ function EmojiInfo({ emojiList, isLoaded }) {
     // get specific endpoint
     const params = useParams();
 
+
+
     // find data in emojiList that matches endpoint
     const emojiData = emojiList.find(emoji => {
         return emoji.name === params.name;
     })
+
+    // check whether emojiData is null to prevent runtime error
+    if (!emojiData) {
+        return <h3 className="loading-bar">Oops! Emoji data not found</h3>
+    }
 
     // destructure emojiData object
     const {name, category, group, htmlCode} = emojiData;
