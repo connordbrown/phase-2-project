@@ -6,11 +6,13 @@ import "./NavBar.css";
 // create nav bar with three endpoints
 function NavBar() {
     return (
-        <nav className="navbar">
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/about">About</NavLink>
-            <NavLink to="/new-emoji-form">Add Emoji</NavLink>
-        </nav>
+        <div className="nav-container">
+            <nav className="navbar">
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/about">About</NavLink>
+                <NavLink to="/new-emoji-form">Add Emoji</NavLink>
+            </nav>
+        </div>
     )
 }
 

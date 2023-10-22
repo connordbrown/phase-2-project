@@ -12,6 +12,12 @@
     color: black;
 }
 
+/* NavBar background */
+.nav-container {
+    background-color: lightsalmon;
+    width: 278px;
+}
+
 /* changes color of Navbar navlinks when they are clicked */
 a.active {
     background: black;

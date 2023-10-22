@@ -14,8 +14,6 @@ function About() {
              the library!
           </p>
         </div>
-
-    
     )}
 
 export default About;
