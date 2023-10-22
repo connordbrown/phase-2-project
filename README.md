@@ -1,6 +1,6 @@
 # EmojiFinder
 
-EmojiFinder is a front-end application for looking up and adding your favorite emojis!
+EmojiFinder is a front-end application for looking up and/or uploading your favorite emojis!
 
 ## Operation
 
