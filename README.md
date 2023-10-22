@@ -27,7 +27,6 @@ npm start
 
 <br>
 <img src="https://github.com/connordbrown/phase-2-project/blob/main/phase-2-project.gif?raw=true" width="800" height="584"/>
-<br>
 
 ## Contributing
 
