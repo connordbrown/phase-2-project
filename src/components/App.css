@@ -21,6 +21,7 @@
   flex-wrap: wrap;
   gap: 40px;
   font-size: xx-large;
+  background-color: gainsboro;
 }
 
 /* adds border to EmojiCard */
@@ -28,6 +29,7 @@
   border: 2px solid black;
   border-radius: 8%;
   padding: 10px;
+  background-color: white;
 }
 
 /* aligns Search and Filter components */
