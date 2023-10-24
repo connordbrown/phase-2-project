@@ -4,6 +4,11 @@ EmojiFinder is a front-end application for looking up and/or uploading your favo
 
 ## Operation
 
+This application uses React Router v6. Make sure your system is running the correct version:
+```bash
+npm install react-router-dom
+```
+
 Use the API simulator [json-server](https://www.npmjs.com/package/json-server) to run the application's back-end:
 
 ```bash
