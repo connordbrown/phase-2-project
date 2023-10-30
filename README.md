@@ -9,6 +9,11 @@ This application uses React Router v6. Make sure your system is running the corr
 npm install react-router-dom
 ```
 
+Then, install dependencies:
+```bash
+npm install
+```
+
 Use the API simulator [json-server](https://www.npmjs.com/package/json-server) to run the application's back-end:
 
 ```bash
